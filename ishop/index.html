@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="utf-8" />
+    <title>IShop</title>
+</head> 
+<body> 
+    <div id="main"></div> 
+        
+    <script src="https://unpkg.com/react@15/dist/react.js"></script> 
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script> 
+        
+    <script src="Catalog.js"></script>
+    <link rel="stylesheet" type="text/css" href="Catalog.css" />
+
+    <style>
+
+        div {
+            box-sizing: border-box;
+        }
+
+    </style>
+
+    <script>
+
+        const ShopName = "IShop";
+        const Products = [
+            {id: 1, item: "Iphone", price: 799.99, photo: "http://ishop/Iphone.jpg", quantity: 5},
+            {id: 2, item: "Ipad", price: 899.99, photo: "http://ishop/Ipad.jpg", quantity: 10},
+            {id: 3, item: "Ipwn", price: 999.99, photo: "http://ishop/Ipwn.jpg", quantity: 15},
+            {id: 4, item: "ISmack", price: 699.99, photo: "http://ishop/ISmack.jpg", quantity: 20},
+        ];
+
+        ReactDOM.render(
+            React.createElement(Catalog, { shopName: ShopName, products: Products }),
+            document.getElementById('main')
+        );
+        
+    </script>
+
+</body> 
+</html>

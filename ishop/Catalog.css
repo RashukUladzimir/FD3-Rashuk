@@ -1,0 +1,34 @@
+
+.Catalog > .Name {
+    font-weight: bold;
+}
+
+.Catalog > .Table {
+    display: table;
+    width: 100%;
+    border: solid black 1px;
+}
+
+.Catalog > .Table > .Header {
+    display: table-row;
+}
+
+
+.Catalog > .Table > .Header >.Cell {
+    display: table-cell;
+    font-weight: bold;
+    border: solid black 1px;
+    background-color: #F0F0F0;
+}
+
+
+.Catalog > .Table > .Row {
+    display: table-row;
+    background-color: #F0F0F0;
+}
+
+ 
+.Catalog > .Table > .Row  > .Cell {
+    display: table-cell;
+    border: solid black 1px;
+}
